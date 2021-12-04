@@ -1,22 +1,21 @@
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
-
+import { NavLink } from "react-router-dom"
 const Inicio = () => {
   return (
     <React.Fragment>
-      <div class="text-center">
+      <div className="text-center">
         <div
           id="carouselExampleCaptions"
-          class="carousel slide"
+          className="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators">
+          <div className="carousel-indicators">
             <button
               type="button"
               data-bs-target="#carouselExampleCaptions"
               data-bs-slide-to="0"
-              class="active"
+              className="active"
               aria-current="true"
               aria-label="Slide 1"
             ></button>
@@ -33,8 +32,8 @@ const Inicio = () => {
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <img
                 src="images/paramo-de-chingaza.jpg"
                 alt="Paramo de chingaza"
@@ -42,7 +41,7 @@ const Inicio = () => {
                 width="75%"
                 height="500px"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-none d-md-block">
                 <h5>Paramo de chingaza</h5>
                 <p className="lead fw-bold">
                   El PNN Chingaza es una de las áreas más importantes y
@@ -52,7 +51,7 @@ const Inicio = () => {
                 </p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <img
                 src="images/suesca-cun.png"
                 alt="Suesca cun"
@@ -60,7 +59,7 @@ const Inicio = () => {
                 width="75%"
                 height="500px"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-none d-md-block">
                 <h5>Suesca Cundinamarca</h5>
                 <p className="lead fw-bold">
                   Suesca fue la primera población de Colombia donde se empezó a
@@ -70,7 +69,7 @@ const Inicio = () => {
                 </p>
               </div>
             </div>
-            <div class="carousel-item">
+            <div className="carousel-item">
               <img
                 src="images/zipaquira.jpg"
                 alt="Zipaquira"
@@ -78,7 +77,7 @@ const Inicio = () => {
                 width="75%"
                 height="500px"
               />
-              <div class="carousel-caption d-none d-md-block">
+              <div className="carousel-caption d-none d-md-block">
                 <h5>Catedral de sal en Zipaquira</h5>
                 <p className="lead fw-bold">
                   La catedral de la Sal de Zipaquirá es considerada como uno de
@@ -92,22 +91,22 @@ const Inicio = () => {
             </div>
           </div>
           <button
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
           </button>
           <button
-            class="carousel-control-next"
+            className="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
           </button>
         </div>
       </div>
@@ -116,14 +115,14 @@ const Inicio = () => {
       <br />
       <br />
       <div>
-        <h1 class="text-center display-2 text-decoration-underline">Conoce más sobre nosostros</h1>
+        <h1 className="text-center display-2 text-decoration-underline">Conoce más sobre nosostros</h1>
       </div>
       <br />
       <br />
       <br />
-      <div class="container">
+      <div className="container">
         <div className="row text-center">
-          <div class="col">
+          <div className="col">
             <img src="https://img.icons8.com/plasticine/100/000000/cyber-security.png" />
             <p className="lead">
               Para nosotros es fundamental la seguridad en actividades y
@@ -132,7 +131,7 @@ const Inicio = () => {
               expertos .{" "}
             </p>
           </div>
-          <div class="col order-5">
+          <div className="col order-5">
           <img src="https://img.icons8.com/plasticine/100/000000/money.png"/>
             <p className="lead">
               Las actividades realizadas cuentan con un gran beneficio en lo
@@ -141,7 +140,7 @@ const Inicio = () => {
               las actividades
             </p>
           </div>
-          <div class="col order-1">
+          <div className="col order-1">
             <img src="https://img.icons8.com/plasticine/100/000000/hourglass.png" />
             <p className="lead">
               Programamos las actividades entendiendo la importancia del factor
@@ -157,89 +156,83 @@ const Inicio = () => {
       <br />
 
       <div>
-        <h1 class="text-center display-2 text-decoration-underline">Actividades ecoturisticas</h1>
+        <h1 className="text-center display-2 text-decoration-underline">Actividades ecoturísticas</h1>
       </div>
       <br />
       <br />
       <br />
 
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
+      <div className="row row-cols-1 row-cols-md-3 g-4">
+        <div className="col">
+          <div className="card h-100">
             <img
               src="images/anuncio1.jpg"
-              class="card-img-top"
+              className="card-img-top"
               alt="tren turistico la sabana"
             />
-            <div class="card-body">
-              <h5 class="card-title text-center">Tren turistico la sabana</h5>
-              <p class="card-text">
+            <div className="card-body">
+              <h5 className="card-title text-center">Tren turistico la sabana</h5>
+              <p className="card-text">
                 Inicia el recorrido en el centro de Bogotá, atraviesa la ciudad
                 y recorre la hermosa sabana hasta la población de Zipaquirá
                 permitiéndote observar la capital y sus alrededores desde un
                 punto de vista diferente y novedoso.
               </p>
             </div>
-            <div class="card-footer  text-center">
-              <small class="text-muted">
-                <a href="/Reserva-Viaje">
-                  <button class="btn btn-primary">
-                    Realizar reserva YA!!!!
-                  </button>
-                </a>
+            <div className="card-footer  text-center">
+              <small className="text-muted">
+              <NavLink to="/Reserva-viaje">
+                     <button className="btn btn-primary">Realizar reserva YA!!!!</button> 
+                    </NavLink>
               </small>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
+        <div className="col">
+          <div className="card h-100">
             <img
               src="images/anuncio2.jpg"
-              class="card-img-top"
+              className="card-img-top"
               alt="catedral de sal"
             />
-            <div class="card-body">
-              <h5 class="card-title text-center">Catedral de sal</h5>
-              <p class="card-text">
+            <div className="card-body">
+              <h5 className="card-title text-center">Catedral de sal</h5>
+              <p className="card-text">
                 La catedral de la Sal de Zipaquirá es considerada como uno de
                 los logros arquitectónicos y artísticos más notables de la
                 arquitectura colombiana.
               </p>
             </div>
-            <div class="card-footer  text-center">
-              <small class="text-muted">
-                <a href="/Reserva-Viaje">
-                  <button class="btn btn-primary">
-                    Realizar reserva YA!!!!
-                  </button>
-                </a>
+            <div className="card-footer  text-center">
+              <small className="text-muted">
+              <NavLink to="/Reserva-viaje">
+                     <button className="btn btn-primary">Realizar reserva YA!!!!</button> 
+                    </NavLink>
               </small>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
+        <div className="col">
+          <div className="card h-100">
             <img
               src="images/anuncio3.jpg"
-              class="card-img-top"
+              className="card-img-top"
               alt="Piedras del tunjo"
             />
-            <div class="card-body">
-              <h5 class="card-title text-center">Piedras del tunjo</h5>
-              <p class="card-text">
+            <div className="card-body">
+              <h5 className="card-title text-center">Piedras del tunjo</h5>
+              <p className="card-text">
                 El Parque Arqueológico de Facatativá o Piedras del Tunjo es un
                 conjunto de pictogramas cuyo origen exacto se desconoce. Su
                 antigüedad tampoco se ha determinado, pero podrían datar de
                 aproximadamente 12 000 años.
               </p>
             </div>
-            <div class="card-footer text-center">
-              <small class="text-muted">
-                <a href="/Reserva-Viaje">
-                  <button class="btn btn-primary">
-                    Realizar reserva YA!!!!
-                  </button>
-                </a>
+            <div className="card-footer text-center">
+              <small className="text-muted">
+              <NavLink to="/Reserva-viaje">
+                     <button className="btn btn-primary">Realizar reserva YA!!!!</button> 
+                  </NavLink>
               </small>
             </div>
           </div>

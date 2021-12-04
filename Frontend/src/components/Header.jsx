@@ -1,7 +1,7 @@
 const Encabezado = () =>{
     return(
         <div>
-        <img src="images/Barrasuperior4.jpg" alt="Barra superior" width='100%' height='150px'/>
+        <img className="img-fluid" src="images/Barrasuperior4.jpg" alt="Barra superior" width='100%' height='150px'/>
       </div>
     )
 }

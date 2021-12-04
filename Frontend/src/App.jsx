@@ -1,41 +1,57 @@
-import "./App.css";
-import Inicio from "./pages/Inicio/Inicio";
-import Lugares from "./pages/Lugares/Lugares";
-import NavBar from "./components/NavBar";
-import ReservaViaje from "./pages/Reserva/Reserva";
-import EquipoTrabajo from "./pages/Equipo/Equipo";
-import Encabezado from "./components/Header";
-import Footer from "./components/Footer";
-import VerReservacion from "./pages/VerReservaciones/VerRes";
+import './App.css';
+import Inicio from './pages/Inicio/Inicio';
+import Lugares from './pages/Lugares/Lugares';
+import NavBar from './components/NavBar';
+import ReservaViaje from './pages/Reserva/Reserva';
+import EquipoTrabajo from './pages/Equipo/Equipo';
+import Encabezado from './components/Header';
+import Footer from './components/Footer';
+import VerReservacion from './pages/VerReservaciones/VerRes';
+import Informacion from "./pages/Lugares/Informacion"
 
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  
+} from "react-router-dom";
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Encabezado />
-        <NavBar />
-        <Switch>
-          <Route exact path="/">
+     <Router>
+       
+      <NavBar />
+      <Encabezado />
+     <Switch>
+          <Route  exact path="/">
             <Inicio />
           </Route>
-          <Route path="/Lugares">
+          <Route path="/lugares">
             <Lugares />
           </Route>
-          <Route path="/Reserva-Viaje">
-            <ReservaViaje />
+          <Route path="/reserva-Viaje">
+          <ReservaViaje />
           </Route>
-          <Route path="/VerReservacion">
-            <VerReservacion />
+          <Route path="/ver-Reservación">
+          <VerReservacion />
           </Route>
-          <Route path="/Equipo-trabajo">
-            <EquipoTrabajo />
+          <Route path="/equipo-trabajo">
+          <EquipoTrabajo />
+          </Route>
+          <Route path="/informacion/:id/:name">
+              <Informacion />
+          </Route>
+          <Route path="*">
+            <h1>Error 404 Page Not Found</h1>
           </Route>
         </Switch>
         <Footer />
-      </Router>
+     </Router>
     </div>
   );
 }
